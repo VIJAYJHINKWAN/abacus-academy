@@ -5,28 +5,28 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(248, 39%, 98%);
-  --foreground: hsl(44, 14%, 16%);
+  --background: #F8F9FA;
+  --foreground: #2C3E50;
   --muted: hsl(60, 4.8%, 95.9%);
   --muted-foreground: hsl(25, 5.3%, 44.7%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(44, 14%, 16%);
+  --popover-foreground: #2C3E50;
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(44, 14%, 16%);
+  --card-foreground: #2C3E50;
   --border: hsl(20, 5.9%, 90%);
   --input: hsl(20, 5.9%, 90%);
-  --primary: hsl(0, 69%, 69%);
-  --primary-foreground: hsl(211, 100%, 99%);
-  --secondary: hsl(168, 56%, 57%);
-  --secondary-foreground: hsl(24, 9.8%, 10%);
-  --accent: hsl(202, 78%, 60%);
-  --accent-foreground: hsl(24, 9.8%, 10%);
+  --primary: #FF6B6B;
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: #4ECDC4;
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: #45B7D1;
+  --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 84.2%, 60.2%);
   --destructive-foreground: hsl(60, 9.1%, 97.8%);
-  --ring: hsl(44, 14%, 16%);
+  --ring: #2C3E50;
   --radius: 0.5rem;
-  --success: hsl(149, 35%, 69%);
-  --text-dark: hsl(209, 33%, 30%);
+  --success: #96CEB4;
+  --text-dark: #2C3E50;
 }
 
 .dark {
@@ -40,16 +40,17 @@
   --card-foreground: hsl(0, 0%, 98%);
   --border: hsl(240, 3.7%, 15.9%);
   --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(0, 69%, 69%);
-  --primary-foreground: hsl(211, 100%, 99%);
-  --secondary: hsl(168, 56%, 57%);
+  --primary: #FF6B6B;
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: #4ECDC4;
   --secondary-foreground: hsl(0, 0%, 98%);
-  --accent: hsl(202, 78%, 60%);
+  --accent: #45B7D1;
   --accent-foreground: hsl(0, 0%, 98%);
   --destructive: hsl(0, 62.8%, 30.6%);
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(240, 4.9%, 83.9%);
   --radius: 0.5rem;
+  --success: #96CEB4;
 }
 
 @layer base {
@@ -129,49 +130,62 @@
 
 /* Custom color classes */
 .bg-primary {
-  background-color: hsl(var(--primary));
+  background-color: var(--primary);
 }
 
 .bg-secondary {
-  background-color: hsl(var(--secondary));
+  background-color: var(--secondary);
 }
 
 .bg-accent {
-  background-color: hsl(var(--accent));
+  background-color: var(--accent);
 }
 
 .bg-success {
-  background-color: hsl(var(--success));
+  background-color: var(--success);
 }
 
 .text-primary {
-  color: hsl(var(--primary));
+  color: var(--primary);
 }
 
 .text-secondary {
-  color: hsl(var(--secondary));
+  color: var(--secondary);
 }
 
 .text-accent {
-  color: hsl(var(--accent));
+  color: var(--accent);
 }
 
 .text-success {
-  color: hsl(var(--success));
+  color: var(--success);
 }
 
 .text-text-dark {
-  color: hsl(var(--text-dark));
+  color: var(--text-dark);
 }
 
 .border-primary {
-  border-color: hsl(var(--primary));
+  border-color: var(--primary);
 }
 
 .border-secondary {
-  border-color: hsl(var(--secondary));
+  border-color: var(--secondary);
 }
 
 .border-accent {
-  border-color: hsl(var(--accent));
+  border-color: var(--accent);
+}
+
+/* Add background gradient utilities */
+.bg-gradient-primary-to-secondary {
+  background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+}
+
+.bg-gradient-secondary-to-accent {
+  background: linear-gradient(135deg, #4ECDC4, #45B7D1);
+}
+
+.bg-gradient-light {
+  background: linear-gradient(135deg, #F8F9FA, rgba(255, 107, 107, 0.1));
 }
