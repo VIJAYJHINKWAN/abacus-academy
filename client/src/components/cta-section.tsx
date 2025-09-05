@@ -23,7 +23,7 @@ export default function CtaSection() {
           <Button 
             variant="outline"
             size="lg"
-            className="border-2 border-white text-white hover:bg-white hover:text-primary transition-all duration-200 px-8 py-4 text-lg"
+            className="bg-white text-primary hover:bg-gray-50 transform hover:scale-105 transition-all duration-200 shadow-lg px-8 py-4 text-lg"
             data-testid="button-schedule-demo"
           >
             <Calendar className="mr-2 h-5 w-5" />
